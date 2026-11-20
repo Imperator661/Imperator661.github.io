@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ivan Kapetanović · IT & Automation</title>
+  <meta name="description" content="Portfolio of Ivan Kapetanović, IT technician: automation workflows, websites and Windows tools.">
+  <meta name="author" content="Ivan Kapetanović">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Mark JS as available and apply the saved theme before first paint (no flash).
+    document.documentElement.classList.add("js");
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark" aria-hidden="true">&gt;_</span>
+        <span>Ivan Kapetanović</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="lang" role="group" aria-label="Language">
+          <a class="lang-btn is-active" href="./" aria-current="true" lang="en">EN</a>
+          <span class="lang-btn is-soon" aria-disabled="true" lang="hr" title="Hrvatski: uskoro">HR<small>soon</small></span>
+          <span class="lang-btn is-soon" aria-disabled="true" lang="de" title="Deutsch: bald verfügbar">DE<small>soon</small></span>
+        </div>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">IT technician · Automation · Web</p>
+          <h1>I build tools that do the <span class="accent">boring work</span> by themselves.</h1>
+          <p class="lead">
+            Workflows that sort documents, watch news feeds and fill in reports, plus the websites
+            and Windows machines they run on. Here's a selection of what I've built.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">See projects</a>
+            <a class="btn btn-ghost" href="https://github.com/Imperator661" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="terminal" aria-label="Example: an automated workflow run">
+          <div class="terminal-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="terminal-title">news-radar · every hour</span>
+          </div>
+          <pre class="terminal-body" id="terminal"><code>$ run news-radar
+✓ 10 feeds fetched (HR + DE)
+✓ 214 items → 9 relevant
+✓ 9 sent to the newsroom on Telegram
+done in 4.2 s</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div>
+          <p class="kicker">About</p>
+          <h2>Technician by trade, builder by habit.</h2>
+        </div>
+        <div class="about-text reveal">
+          <p>
+            I'm Ivan, a student and IT technician based in Germany. Most of what I build starts
+            the same way: someone does the same task by hand every day, and I think a machine
+            should do it.
+          </p>
+          <p>
+            Then I build that: an n8n workflow, a script, a small web app or a whole website.
+            I care that it keeps running when I'm not looking, that people without a technical
+            background can use it, and that nothing leaves the building that shouldn't.
+          </p>
+          <ul class="facts">
+            <li><strong>Languages</strong> Croatian / Bosnian, German, English</li>
+            <li><strong>Focus</strong> automation, web, Windows administration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-alt" id="projects">
+      <div class="wrap">
+        <p class="kicker">Projects</p>
+        <div class="section-head">
+          <h2>Things I've built</h2>
+          <p class="disclaimer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+            <span>Some of this is client work. For legal reasons its code, data and company names
+              stay private, so those descriptions are kept general.</span>
+          </p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-filter="automation" aria-pressed="false">Automation</button>
+          <button class="chip" type="button" data-filter="web" aria-pressed="false">Web</button>
+        </div>
+
+        <div class="projects">
+          <article class="card project reveal" data-cat="web">
+            <div class="project-head">
+              <h3>Dnevnik Dijaspore</h3>
+              <span class="badge badge-live">Live</span>
+            </div>
+            <p class="project-sub">News portal for the Croatian and Bosnian diaspora in Germany</p>
+            <p class="project-desc">
+              I set up and run the technical side: WordPress with a news theme, a hardened login
+              with two-factor auth, GDPR-compliant cookie consent and cookieless analytics, SEO and
+              Search Console, caching behind a CDN, and a setup that lets the newsroom publish
+              straight from a phone.
+            </p>
+            <ul class="tags"><li>WordPress</li><li>SEO</li><li>GDPR</li><li>Security</li></ul>
+            <div class="project-links">
+              <a href="https://dnevnikdijaspore.de" target="_blank" rel="noopener">Visit site ↗</a>
+            </div>
+          </article>
+
+          <article class="card project reveal" data-cat="automation">
+            <div class="project-head">
+              <h3>News radar for a newsroom</h3>
+            </div>
+            <p class="project-sub">n8n workflow · RSS → Telegram</p>
+            <p class="project-desc">
+              Every hour it reads a dozen Croatian and German news feeds, keeps only the stories
+              that matter to the diaspora and posts them to the newsroom's Telegram. The keyword
+              filter is tuned on real examples, because "mentions Germany" isn't the same as
+              "relevant".
+            </p>
+            <ul class="tags"><li>n8n</li><li>RSS</li><li>Telegram Bot API</li><li>Docker</li></ul>
+          </article>
+
+          <article class="card project reveal" data-cat="automation">
+            <div class="project-head">
+              <h3>AI research assistant</h3>
+            </div>
+            <p class="project-sub">Python · SQLite · LLM</p>
+            <p class="project-desc">
+              Collects news feeds into SQLite and turns them into a daily briefing by topic: who
+              reports what, where outlets disagree and which source is primary. On request it
+              writes a full dossier with a timeline and a confirmed-vs-unverified table. It does
+              the research; people do the writing.
+            </p>
+            <ul class="tags"><li>Python</li><li>SQLite</li><li>Claude</li><li>Prompting</li></ul>
+          </article>
+
+          <article class="card project reveal" data-cat="automation web">
+            <div class="project-head">
+              <h3>TikTok → WordPress pipeline</h3>
+              <span class="badge">Prototype</span>
+            </div>
+            <p class="project-sub">Node.js · video to article</p>
+            <p class="project-desc">
+              Turns short news videos into Croatian articles: reads the on-screen text with OCR,
+              looks up context on the web, writes the article with an LLM, skips duplicates and
+              posts it through the WordPress REST API.
+            </p>
+            <ul class="tags"><li>Node.js</li><li>Tesseract OCR</li><li>LLM API</li><li>WP REST API</li></ul>
+          </article>
+
+
+          <article class="card project project-nda reveal" data-cat="automation">
+            <div class="project-head">
+              <h3>Client work</h3>
+              <span class="badge badge-nda">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+                Confidential
+              </span>
+            </div>
+            <p class="project-sub">Business automation for a company</p>
+            <ul class="nda-list">
+              <li>
+                <strong>Scanned-document sorter.</strong> Scans come in, get OCR'd, are recognised as
+                invoice or delivery note, renamed by sender, number and date, and filed into an
+                archive by the date printed on the document. New senders are queued for a person to
+                confirm. Runs fully on-premises, no cloud service.
+              </li>
+              <li>
+                <strong>Phone-system call analytics.</strong> Drop in the call exports from a business
+                phone system and get a dashboard plus a client-ready PDF report: answered and missed
+                calls, peak hours, per-line stats. Runs entirely in the browser, so no call data is
+                ever uploaded.
+              </li>
+            </ul>
+            <ul class="tags"><li>n8n</li><li>OCR</li><li>JavaScript</li><li>Reporting</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <p class="kicker">Skills</p>
+        <h2>What I work with</h2>
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3>Automation</h3>
+            <ul class="tags"><li>n8n</li><li>REST APIs</li><li>Webhooks</li><li>Telegram Bot API</li><li>OCR (Tesseract, Stirling-PDF)</li><li>LLM APIs</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Code</h3>
+            <ul class="tags"><li>JavaScript / Node.js</li><li>Python</li><li>PowerShell</li><li>HTML / CSS</li><li>SQL / SQLite</li><li>Git</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Web</h3>
+            <ul class="tags"><li>WordPress</li><li>SEO / Search Console</li><li>GDPR &amp; cookie consent</li><li>Caching &amp; CDN</li><li>DNS &amp; hosting</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Systems</h3>
+            <ul class="tags"><li>Windows administration</li><li>Hyper-V</li><li>Docker</li><li>Linux (Ubuntu)</li><li>Networking basics</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt contact" id="contact">
+      <div class="wrap contact-inner reveal">
+        <p class="kicker">Contact</p>
+        <h2>Let's talk.</h2>
+        <p class="lead">Questions about a project, or just want to compare notes on automation? Find me here.</p>
+        <div class="cta-row cta-center">
+          <a class="btn btn-primary" href="mailto:kontakt@kapetanovic.net">kontakt@kapetanovic.net</a>
+          <button class="btn btn-ghost" type="button" id="copy-email" data-email="kontakt@kapetanovic.net">Copy email</button>
+        </div>
+        <p class="contact-links">
+          <a class="btn btn-ghost" href="https://github.com/Imperator661" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+            github.com/Imperator661
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Ivan Kapetanović</p>
+      <p>Hand-written HTML, CSS &amp; JavaScript. No trackers, no cookies.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
