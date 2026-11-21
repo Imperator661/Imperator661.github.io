@@ -6,7 +6,8 @@
   <title>Ivan Kapetanović · IT & Automation</title>
   <meta name="description" content="Portfolio of Ivan Kapetanović, IT technician: automation workflows, websites and Windows tools.">
   <meta name="author" content="Ivan Kapetanović">
-  <meta name="theme-color" content="#0d1117">
+  <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <script>
@@ -27,8 +28,7 @@
 
       <nav class="nav" id="nav" aria-label="Main">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#work">What I do</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -58,10 +58,10 @@
           <h1>I build tools that do the <span class="accent">boring work</span> by themselves.</h1>
           <p class="lead">
             Workflows that sort documents, watch news feeds and fill in reports, plus the websites
-            and Windows machines they run on. Here's a selection of what I've built.
+            and Windows machines they run on.
           </p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="#projects">See projects</a>
+            <a class="btn btn-primary" href="#work">See what I do</a>
           </div>
         </div>
 
@@ -86,7 +86,7 @@ done in 4.2 s</code></pre>
           <p class="kicker">About</p>
           <h2>Technician by trade, builder by habit.</h2>
         </div>
-        <div class="about-text reveal">
+        <div class="about-text">
           <p>
             I'm Ivan, a student and IT technician based in Germany. Most of what I build starts
             the same way: someone does the same task by hand every day, and I think a machine
@@ -105,145 +105,94 @@ done in 4.2 s</code></pre>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="section section-alt" id="projects">
+    <!-- WORK: three general areas. A block's visual can be swapped for a photo later:
+         replace the contents of its .work-media with <img src="assets/..." alt="..." width height>. -->
+    <section class="section section-alt" id="work">
       <div class="wrap">
-        <p class="kicker">Projects</p>
-        <div class="section-head">
-          <h2>Things I've built</h2>
-          <p class="disclaimer">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
-            <span>Some of this is client work. For legal reasons its code, data and company names
-              stay private, so those descriptions are kept general.</span>
-          </p>
-        </div>
+        <p class="kicker">What I do</p>
+        <h2>Automation, websites and the machines underneath</h2>
 
-        <div class="filters" role="group" aria-label="Filter projects">
-          <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="chip" type="button" data-filter="automation" aria-pressed="false">Automation</button>
-          <button class="chip" type="button" data-filter="web" aria-pressed="false">Web</button>
-        </div>
-
-        <div class="projects">
-          <article class="card project reveal" data-cat="web">
-            <div class="project-head">
-              <h3>Dnevnik Dijaspore</h3>
-              <span class="badge badge-live">Live</span>
+        <div class="work-list">
+          <article class="work">
+            <div class="work-media media-flow" aria-hidden="true">
+              <div class="flow">
+                <div class="flow-node"><span class="flow-ico">⇣</span>Scans &amp; feeds</div>
+                <div class="flow-line"><i></i></div>
+                <div class="flow-node flow-main"><span class="flow-ico">⚙</span>Sort, read, decide</div>
+                <div class="flow-line"><i></i></div>
+                <div class="flow-outs">
+                  <div class="flow-node">Archive</div>
+                  <div class="flow-node">Telegram</div>
+                  <div class="flow-node">PDF report</div>
+                </div>
+              </div>
             </div>
-            <p class="project-sub">News portal for the Croatian and Bosnian diaspora in Germany</p>
-            <p class="project-desc">
-              I set up and run the technical side: WordPress with a news theme, a hardened login
-              with two-factor auth, GDPR-compliant cookie consent and cookieless analytics, SEO and
-              Search Console, caching behind a CDN, and a setup that lets the newsroom publish
-              straight from a phone.
-            </p>
-            <ul class="tags"><li>WordPress</li><li>SEO</li><li>GDPR</li><li>Security</li></ul>
-            <div class="project-links">
-              <a href="https://dnevnikdijaspore.de" target="_blank" rel="noopener">Visit site ↗</a>
+            <div class="work-copy">
+              <p class="work-num">01</p>
+              <h3>Automation</h3>
+              <p>
+                Workflows that take a daily chore off someone's desk: filing scanned invoices,
+                watching news feeds, turning raw call exports into a finished report. Where the data
+                is sensitive, it runs on-premises and nothing leaves the building.
+              </p>
+              <ul class="tags"><li>n8n</li><li>Python</li><li>Node.js</li><li>OCR</li><li>REST APIs</li><li>LLM APIs</li></ul>
             </div>
           </article>
 
-          <article class="card project reveal" data-cat="automation">
-            <div class="project-head">
-              <h3>News radar for a newsroom</h3>
+          <article class="work work-flip">
+            <div class="work-media media-browser">
+              <div class="browser">
+                <div class="browser-bar" aria-hidden="true"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="browser-url">dnevnikdijaspore.de</span></div>
+                <img src="assets/dd-header.webp" width="960" height="128" alt="Header of the Dnevnik Dijaspore news site" loading="lazy" decoding="async">
+                <div class="browser-grid" aria-hidden="true"><i></i><i></i><i></i></div>
+              </div>
             </div>
-            <p class="project-sub">n8n workflow · RSS → Telegram</p>
-            <p class="project-desc">
-              Every hour it reads a dozen Croatian and German news feeds, keeps only the stories
-              that matter to the diaspora and posts them to the newsroom's Telegram. The keyword
-              filter is tuned on real examples, because "mentions Germany" isn't the same as
-              "relevant".
-            </p>
-            <ul class="tags"><li>n8n</li><li>RSS</li><li>Telegram Bot API</li><li>Docker</li></ul>
+            <div class="work-copy">
+              <p class="work-num">02</p>
+              <h3>Websites</h3>
+              <p>
+                Sites set up and run end to end: WordPress, SEO and Search Console, cookie consent
+                that holds up under GDPR, caching behind a CDN, DNS and mail. I run the technical side of
+                the news portal Dnevnik Dijaspore, and I wrote this page by hand.
+              </p>
+              <ul class="tags"><li>WordPress</li><li>SEO</li><li>GDPR</li><li>HTML / CSS / JS</li><li>DNS &amp; hosting</li></ul>
+              <a class="work-link" href="https://dnevnikdijaspore.de" target="_blank" rel="noopener">Visit Dnevnik Dijaspore ↗</a>
+            </div>
           </article>
 
-          <article class="card project reveal" data-cat="automation">
-            <div class="project-head">
-              <h3>AI research assistant</h3>
+          <article class="work">
+            <div class="work-media media-status" aria-hidden="true">
+              <ul class="status">
+                <li><span class="ok"></span>Windows clients<em>patched</em></li>
+                <li><span class="ok"></span>Hyper-V host<em>running</em></li>
+                <li><span class="ok"></span>Docker services<em>healthy</em></li>
+                <li><span class="ok"></span>Backups<em>restore tested</em></li>
+                <li><span class="ok"></span>Admin logins<em>2FA on</em></li>
+              </ul>
             </div>
-            <p class="project-sub">Python · SQLite · LLM</p>
-            <p class="project-desc">
-              Collects news feeds into SQLite and turns them into a daily briefing by topic: who
-              reports what, where outlets disagree and which source is primary. On request it
-              writes a full dossier with a timeline and a confirmed-vs-unverified table. It does
-              the research; people do the writing.
-            </p>
-            <ul class="tags"><li>Python</li><li>SQLite</li><li>Claude</li><li>Prompting</li></ul>
-          </article>
-
-          <article class="card project reveal" data-cat="automation web">
-            <div class="project-head">
-              <h3>TikTok → WordPress pipeline</h3>
-              <span class="badge">Prototype</span>
+            <div class="work-copy">
+              <p class="work-num">03</p>
+              <h3>IT &amp; systems</h3>
+              <p>
+                The machines all of this runs on: Windows administration, virtual machines and
+                containers, Linux servers, backups that are actually tested, and two-factor login
+                wherever it matters.
+              </p>
+              <ul class="tags"><li>Windows</li><li>PowerShell</li><li>Hyper-V</li><li>Docker</li><li>Linux</li><li>Networking</li></ul>
             </div>
-            <p class="project-sub">Node.js · video to article</p>
-            <p class="project-desc">
-              Turns short news videos into Croatian articles: reads the on-screen text with OCR,
-              looks up context on the web, writes the article with an LLM, skips duplicates and
-              posts it through the WordPress REST API.
-            </p>
-            <ul class="tags"><li>Node.js</li><li>Tesseract OCR</li><li>LLM API</li><li>WP REST API</li></ul>
-          </article>
-
-
-          <article class="card project project-nda reveal" data-cat="automation">
-            <div class="project-head">
-              <h3>Client work</h3>
-              <span class="badge badge-nda">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
-                Confidential
-              </span>
-            </div>
-            <p class="project-sub">Business automation for a company</p>
-            <ul class="nda-list">
-              <li>
-                <strong>Scanned-document sorter.</strong> Scans come in, get OCR'd, are recognised as
-                invoice or delivery note, renamed by sender, number and date, and filed into an
-                archive by the date printed on the document. New senders are queued for a person to
-                confirm. Runs fully on-premises, no cloud service.
-              </li>
-              <li>
-                <strong>Phone-system call analytics.</strong> Drop in the call exports from a business
-                phone system and get a dashboard plus a client-ready PDF report: answered and missed
-                calls, peak hours, per-line stats. Runs entirely in the browser, so no call data is
-                ever uploaded.
-              </li>
-            </ul>
-            <ul class="tags"><li>n8n</li><li>OCR</li><li>JavaScript</li><li>Reporting</li></ul>
           </article>
         </div>
-      </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="wrap">
-        <p class="kicker">Skills</p>
-        <h2>What I work with</h2>
-        <div class="skills">
-          <div class="skill-group reveal">
-            <h3>Automation</h3>
-            <ul class="tags"><li>n8n</li><li>REST APIs</li><li>Webhooks</li><li>Telegram Bot API</li><li>OCR (Tesseract, Stirling-PDF)</li><li>LLM APIs</li></ul>
-          </div>
-          <div class="skill-group reveal">
-            <h3>Code</h3>
-            <ul class="tags"><li>JavaScript / Node.js</li><li>Python</li><li>PowerShell</li><li>HTML / CSS</li><li>SQL / SQLite</li><li>Git</li></ul>
-          </div>
-          <div class="skill-group reveal">
-            <h3>Web</h3>
-            <ul class="tags"><li>WordPress</li><li>SEO / Search Console</li><li>GDPR &amp; cookie consent</li><li>Caching &amp; CDN</li><li>DNS &amp; hosting</li></ul>
-          </div>
-          <div class="skill-group reveal">
-            <h3>Systems</h3>
-            <ul class="tags"><li>Windows administration</li><li>Hyper-V</li><li>Docker</li><li>Linux (Ubuntu)</li><li>Networking basics</li></ul>
-          </div>
-        </div>
+        <p class="work-note">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          Part of this is client work, so it stays general here. Ask me and I'll tell you more.
+        </p>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section class="section section-alt contact" id="contact">
-      <div class="wrap contact-inner reveal">
+      <div class="wrap contact-inner">
         <p class="kicker">Contact</p>
         <h2>Let's talk.</h2>
         <p class="lead">Questions about a project, or just want to compare notes on automation? Find me here.</p>

@@ -55,43 +55,6 @@
     });
   }
 
-  /* ---------- Reveal on scroll ---------- */
-  var revealEls = document.querySelectorAll(".reveal");
-  if (!reduceMotion && "IntersectionObserver" in window) {
-    var revealObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    revealEls.forEach(function (el) { revealObserver.observe(el); });
-  } else {
-    revealEls.forEach(function (el) { el.classList.add("is-visible"); });
-  }
-
-  /* ---------- Project filter ---------- */
-  var chips = document.querySelectorAll(".filters .chip");
-  var projects = document.querySelectorAll(".project");
-
-  chips.forEach(function (chip) {
-    chip.addEventListener("click", function () {
-      var filter = chip.dataset.filter;
-      chips.forEach(function (c) {
-        var active = c === chip;
-        c.classList.toggle("is-active", active);
-        c.setAttribute("aria-pressed", String(active));
-      });
-      projects.forEach(function (p) {
-        var cats = p.dataset.cat.split(" ");
-        var show = filter === "all" || cats.indexOf(filter) !== -1;
-        p.classList.toggle("is-hidden", !show);
-        if (show) p.classList.add("is-visible");
-      });
-    });
-  });
-
   /* ---------- Terminal typing ---------- */
   var term = document.getElementById("terminal");
   var lines = [
