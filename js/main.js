@@ -25,7 +25,9 @@
   function setMenu(open) {
     nav.classList.toggle("is-open", open);
     menuBtn.setAttribute("aria-expanded", String(open));
-    menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    menuBtn.setAttribute("aria-label", open
+      ? (menuBtn.dataset.labelClose || "Close menu")
+      : (menuBtn.dataset.labelOpen || "Open menu"));
   }
 
   menuBtn.addEventListener("click", function () {
@@ -57,13 +59,13 @@
 
   /* ---------- Terminal typing ---------- */
   var term = document.getElementById("terminal");
-  var lines = [
-    { text: "$ run news-radar", cls: "t-cmd", typed: true },
-    { text: "✓ 10 feeds fetched (HR + DE)", cls: "t-ok" },
-    { text: "✓ 214 items → 9 relevant", cls: "t-ok" },
-    { text: "✓ 9 sent to the newsroom on Telegram", cls: "t-ok" },
-    { text: "done in 4.2 s", cls: "t-dim" }
-  ];
+  // The lines come from the page itself, so each language version animates its own text.
+  // "$ ..." is typed as a command, "✓ ..." shows as a success line, anything else is dimmed.
+  var lines = term ? term.textContent.split("\n").filter(function (t) { return t.trim(); }).map(function (t) {
+    if (t.charAt(0) === "$") return { text: t, cls: "t-cmd", typed: true };
+    if (t.charAt(0) === "✓") return { text: t, cls: "t-ok" };
+    return { text: t, cls: "t-dim" };
+  }) : [];
 
   function span(text, cls) {
     var s = document.createElement("span");
@@ -147,7 +149,7 @@
       var email = copyBtn.dataset.email;
       if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(email).then(
-          function () { showToast("Email copied"); },
+          function () { showToast(copyBtn.dataset.copied || "Email copied"); },
           function () { showToast(email); }
         );
       } else {

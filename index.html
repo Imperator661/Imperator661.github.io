@@ -8,6 +8,10 @@
   <meta name="author" content="Ivan Kapetanović">
   <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://kapetanovic.net/">
+  <link rel="alternate" hreflang="en" href="https://kapetanovic.net/">
+  <link rel="alternate" hreflang="de" href="https://kapetanovic.net/de/">
+  <link rel="alternate" hreflang="x-default" href="https://kapetanovic.net/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <script>
@@ -36,13 +40,13 @@
         <div class="lang" role="group" aria-label="Language">
           <a class="lang-btn is-active" href="./" aria-current="true" lang="en">EN</a>
           <span class="lang-btn is-soon" aria-disabled="true" lang="hr" title="Hrvatski: uskoro">HR<small>soon</small></span>
-          <span class="lang-btn is-soon" aria-disabled="true" lang="de" title="Deutsch: bald verfügbar">DE<small>soon</small></span>
+          <a class="lang-btn" href="de/" lang="de" hreflang="de">DE</a>
         </div>
         <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
           <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
           <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
         </button>
-        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu" aria-expanded="false" aria-controls="nav">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
         </button>
       </div>
@@ -198,7 +202,7 @@ done in 4.2 s</code></pre>
         <p class="lead">Questions about a project, or just want to compare notes on automation? Find me here.</p>
         <div class="cta-row cta-center">
           <a class="btn btn-primary" href="mailto:kontakt@kapetanovic.net">kontakt@kapetanovic.net</a>
-          <button class="btn btn-ghost" type="button" id="copy-email" data-email="kontakt@kapetanovic.net">Copy email</button>
+          <button class="btn btn-ghost" type="button" id="copy-email" data-copied="Email copied" data-email="kontakt@kapetanovic.net">Copy email</button>
         </div>
       </div>
     </section>

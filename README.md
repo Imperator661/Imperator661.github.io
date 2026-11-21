@@ -4,7 +4,9 @@ Personal portfolio. Plain HTML, CSS and JavaScript: no framework, no build step.
 Live at `https://kapetanovic.net` (repo `Imperator661.github.io`, GitHub Pages).
 
 ```
-index.html          English page (the only language for now)
+index.html          English page
+de/index.html       German page (same layout, ../ paths; texts for the terminal, toast and
+                    menu labels live in the HTML, main.js reads them)
 css/style.css       all styles, light/dark tokens at the top
 js/main.js          theme toggle, mobile menu, terminal animation, copy email
 assets/             favicon and images (dd-header.webp = header strip of dnevnikdijaspore.de only;
@@ -27,5 +29,6 @@ contents with `<img src="assets/<name>.webp" alt="..." width=".." height=".." lo
 
 ## Later
 
-- `hr/index.html` and `de/index.html`: translated copies, then switch the HR/DE buttons in the
-  header from `<span class="is-soon">` to links.
+- `hr/index.html`: copy `de/index.html`, translate, add its hreflang line to all pages and turn
+  the HR button from `<span class="is-soon">` into a link on every page.
+- A text change on one page must be made on every language version.

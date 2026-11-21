@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ivan Kapetanović · IT & Automatisierung</title>
+  <meta name="description" content="Portfolio von Ivan Kapetanović, IT-Techniker: Automatisierung, Websites und Windows-Administration.">
+  <meta name="author" content="Ivan Kapetanović">
+  <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://kapetanovic.net/de/">
+  <link rel="alternate" hreflang="en" href="https://kapetanovic.net/">
+  <link rel="alternate" hreflang="de" href="https://kapetanovic.net/de/">
+  <link rel="alternate" hreflang="x-default" href="https://kapetanovic.net/">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>
+    // Mark JS as available and apply the saved theme before first paint (no flash).
+    document.documentElement.classList.add("js");
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Nach oben">
+        <span class="brand-mark" aria-hidden="true">&gt;_</span>
+        <span>Ivan Kapetanović</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Hauptmenü">
+        <a href="#about">Über mich</a>
+        <a href="#work">Was ich mache</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="lang" role="group" aria-label="Sprache">
+          <a class="lang-btn" href="../" lang="en" hreflang="en">EN</a>
+          <span class="lang-btn is-soon" aria-disabled="true" lang="hr" title="Hrvatski: uskoro">HR<small>bald</small></span>
+          <a class="lang-btn is-active" href="./" aria-current="true" lang="de">DE</a>
+        </div>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Dunkelmodus umschalten">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Menü öffnen" data-label-open="Menü öffnen" data-label-close="Menü schließen" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">IT-Technik · Automatisierung · Web</p>
+          <h1>Ich baue Tools, die <span class="accent">lästige Arbeit</span> von selbst erledigen.</h1>
+          <p class="lead">
+            Workflows, die Dokumente sortieren, Nachrichten-Feeds beobachten und Berichte ausfüllen,
+            dazu die Websites und Windows-Rechner, auf denen sie laufen.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#work">Was ich mache</a>
+          </div>
+        </div>
+
+        <div class="terminal" aria-label="Beispiel: ein automatischer Workflow-Lauf">
+          <div class="terminal-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="terminal-title">news-radar · stündlich</span>
+          </div>
+          <pre class="terminal-body" id="terminal"><code>$ run news-radar
+✓ 10 Feeds abgerufen (HR + DE)
+✓ 214 Meldungen → 9 relevant
+✓ 9 an die Redaktion auf Telegram gesendet
+fertig in 4,2 s</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div>
+          <p class="kicker">Über mich</p>
+          <h2>Techniker von Beruf, Tüftler aus Gewohnheit.</h2>
+        </div>
+        <div class="about-text">
+          <p>
+            Ich bin Ivan, Student und IT-Techniker in Deutschland. Fast alles, was ich baue, fängt
+            gleich an: Jemand erledigt jeden Tag dieselbe Aufgabe von Hand, und ich finde, das
+            sollte eine Maschine tun.
+          </p>
+          <p>
+            Dann baue ich genau das: einen n8n-Workflow, ein Skript, eine kleine Web-App oder eine
+            ganze Website. Mir ist wichtig, dass es weiterläuft, wenn ich nicht hinschaue, dass auch
+            Leute ohne technischen Hintergrund damit klarkommen und dass nichts das Haus verlässt,
+            was dort bleiben soll.
+          </p>
+          <ul class="facts">
+            <li><strong>Sprachen</strong> Kroatisch, Deutsch, Englisch</li>
+            <li><strong>Schwerpunkt</strong> Automatisierung, Web, Windows-Administration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK: three general areas. A block's visual can be swapped for a photo later:
+         replace the contents of its .work-media with <img src="assets/..." alt="..." width height>. -->
+    <section class="section section-alt" id="work">
+      <div class="wrap">
+        <p class="kicker">Was ich mache</p>
+        <h2>Automatisierung, Websites und die Technik darunter</h2>
+
+        <div class="work-list">
+          <article class="work">
+            <div class="work-media media-flow" aria-hidden="true">
+              <div class="flow">
+                <div class="flow-node"><span class="flow-ico">⇣</span>Scans &amp; Feeds</div>
+                <div class="flow-line"><i></i></div>
+                <div class="flow-node flow-main"><span class="flow-ico">⚙</span>Sortieren, lesen, entscheiden</div>
+                <div class="flow-line"><i></i></div>
+                <div class="flow-outs">
+                  <div class="flow-node">Archiv</div>
+                  <div class="flow-node">Telegram</div>
+                  <div class="flow-node">PDF-Bericht</div>
+                </div>
+              </div>
+            </div>
+            <div class="work-copy">
+              <p class="work-num">01</p>
+              <h3>Automatisierung</h3>
+              <p>
+                Workflows, die jemandem eine tägliche Routinearbeit abnehmen: gescannte Rechnungen
+                ablegen, Nachrichten-Feeds beobachten, rohe Anrufdaten in einen fertigen Bericht
+                verwandeln. Sind die Daten sensibel, läuft alles lokal und nichts verlässt das Haus.
+              </p>
+              <ul class="tags"><li>n8n</li><li>Python</li><li>Node.js</li><li>OCR</li><li>REST-APIs</li><li>LLM-APIs</li></ul>
+            </div>
+          </article>
+
+          <article class="work work-flip">
+            <div class="work-media media-browser">
+              <div class="browser">
+                <div class="browser-bar" aria-hidden="true"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="browser-url">dnevnikdijaspore.de</span></div>
+                <img src="../assets/dd-header.webp" width="960" height="128" alt="Kopfzeile der Nachrichtenseite Dnevnik Dijaspore" loading="lazy" decoding="async">
+                <div class="browser-grid" aria-hidden="true"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+            <div class="work-copy">
+              <p class="work-num">02</p>
+              <h3>Websites</h3>
+              <p>
+                Websites von der Einrichtung bis zum laufenden Betrieb: WordPress, SEO und Search
+                Console, DSGVO-konforme Cookie-Einwilligung, Caching hinter einem CDN, DNS und E-Mail.
+                Ich betreue die Technik des Nachrichtenportals Dnevnik Dijaspore, und diese Seite habe
+                ich von Hand geschrieben.
+              </p>
+              <ul class="tags"><li>WordPress</li><li>SEO</li><li>DSGVO</li><li>HTML / CSS / JS</li><li>DNS &amp; Hosting</li></ul>
+              <a class="work-link" href="https://dnevnikdijaspore.de" target="_blank" rel="noopener">Dnevnik Dijaspore ansehen ↗</a>
+            </div>
+          </article>
+
+          <article class="work">
+            <div class="work-media media-status" aria-hidden="true">
+              <ul class="status">
+                <li><span class="ok"></span>Windows-Clients<em>aktuell</em></li>
+                <li><span class="ok"></span>Hyper-V-Host<em>läuft</em></li>
+                <li><span class="ok"></span>Docker-Dienste<em>fehlerfrei</em></li>
+                <li><span class="ok"></span>Backups<em>Restore getestet</em></li>
+                <li><span class="ok"></span>Admin-Logins<em>2FA aktiv</em></li>
+              </ul>
+            </div>
+            <div class="work-copy">
+              <p class="work-num">03</p>
+              <h3>IT &amp; Systeme</h3>
+              <p>
+                Die Rechner, auf denen das alles läuft: Windows-Administration, virtuelle Maschinen und
+                Container, Linux-Server, Backups, deren Wiederherstellung wirklich getestet ist, und
+                Zwei-Faktor-Login überall, wo es darauf ankommt.
+              </p>
+              <ul class="tags"><li>Windows</li><li>PowerShell</li><li>Hyper-V</li><li>Docker</li><li>Linux</li><li>Netzwerke</li></ul>
+            </div>
+          </article>
+        </div>
+
+        <p class="work-note">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          Ein Teil davon ist Kundenarbeit, deshalb bleibt es hier allgemein. Fragen Sie mich gern nach Details.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt contact" id="contact">
+      <div class="wrap contact-inner">
+        <p class="kicker">Kontakt</p>
+        <h2>Schreiben Sie mir.</h2>
+        <p class="lead">Fragen zu einem Projekt oder Lust auf einen Austausch über Automatisierung? Hier erreichen Sie mich.</p>
+        <div class="cta-row cta-center">
+          <a class="btn btn-primary" href="mailto:kontakt@kapetanovic.net">kontakt@kapetanovic.net</a>
+          <button class="btn btn-ghost" type="button" id="copy-email" data-copied="E-Mail-Adresse kopiert" data-email="kontakt@kapetanovic.net">E-Mail kopieren</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Ivan Kapetanović</p>
+      <p>Von Hand geschrieben: HTML, CSS &amp; JavaScript. Keine Tracker, keine Cookies.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
