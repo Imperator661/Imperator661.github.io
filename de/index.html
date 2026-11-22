@@ -34,6 +34,7 @@
       <nav class="nav" id="nav" aria-label="Hauptmenü">
         <a href="#about">Über mich</a>
         <a href="#work">Was ich mache</a>
+        <a href="#projects">Projekte</a>
         <a href="#contact">Kontakt</a>
       </nav>
 
@@ -208,6 +209,57 @@ fertig in 4,2 s</code></pre>
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
           Ein Teil davon ist für ein Unternehmen entstanden, deshalb bleibt es hier allgemein.
         </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <p class="kicker">Projekte</p>
+        <h2>Kleinere Sachen, die ich gebaut habe und betreibe</h2>
+        <div class="proj-grid">
+          <article class="proj">
+            <div class="pflow" aria-hidden="true">
+              <span class="pf-node">Telegram · Slack</span><span class="pf-line"><i></i></span>
+              <span class="pf-node pf-main">Assistent</span><span class="pf-line"><i></i></span>
+              <span class="pf-outs"><span class="pf-node">Briefing</span><span class="pf-node">Sprache</span><span class="pf-node">Dateien</span></span>
+            </div>
+            <h3>KI-Assistent</h3>
+            <p>Mein eigener KI-Assistent auf dem Server, in Telegram und im Slack des Teams. Er läuft ohne Admin-Rechte.</p>
+            <ul class="tags"><li>Hermes Agent</li><li>Telegram</li><li>Slack</li><li>systemd</li></ul>
+          </article>
+          <article class="proj">
+            <div class="pflow" aria-hidden="true">
+              <span class="pf-node">10 Feeds</span><span class="pf-line"><i></i></span>
+              <span class="pf-node pf-main">Filter</span><span class="pf-line"><i></i></span>
+              <span class="pf-outs"><span class="pf-node">Telegram</span></span>
+            </div>
+            <h3>News-Bot</h3>
+            <p>Liest stündlich kroatische und deutsche Nachrichten-Feeds und schickt die wichtigen an die Redaktion.</p>
+            <ul class="tags"><li>n8n</li><li>RSS</li><li>Telegram API</li></ul>
+          </article>
+          <article class="proj">
+            <div class="pflow" aria-hidden="true">
+              <span class="pf-node">Scans</span><span class="pf-line"><i></i></span>
+              <span class="pf-node pf-main">OCR</span><span class="pf-line"><i></i></span>
+              <span class="pf-outs"><span class="pf-node">Rechnung</span><span class="pf-node">Lieferschein</span><span class="pf-node">Archiv</span></span>
+            </div>
+            <h3>Rechnungs-Sortierer</h3>
+            <p>Liest gescannte Rechnungen, benennt und archiviert sie. Läuft lokal, nichts verlässt das Haus.</p>
+            <ul class="tags"><li>n8n</li><li>Stirling PDF</li><li>OCR</li><li>Docker</li></ul>
+          </article>
+          <article class="proj">
+            <div class="pflow" aria-hidden="true">
+              <span class="pf-node">kapetanovic.net</span><span class="pf-line"><i></i></span>
+              <span class="pf-node pf-main">DNS</span><span class="pf-line"><i></i></span>
+              <span class="pf-outs"><span class="pf-node">Mail</span><span class="pf-node">Web</span></span>
+            </div>
+            <h3>Domain &amp; Mail</h3>
+            <p>Eigene Domain mit Mail: SPF, DKIM und DMARC von Hand eingerichtet, HTTPS und 2FA überall.</p>
+            <ul class="tags"><li>DNS</li><li>SPF · DKIM · DMARC</li><li>Proton Mail</li></ul>
+          </article>
+        </div>
+        <p class="toolset"><strong>Täglich</strong> Linux &amp; Docker · n8n · WordPress · PowerShell &amp; Windows · DNS &amp; Mail · KI-Agenten</p>
       </div>
     </section>
 

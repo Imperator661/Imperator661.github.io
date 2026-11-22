@@ -34,6 +34,7 @@
       <nav class="nav" id="nav" aria-label="Main">
         <a href="#about">About</a>
         <a href="#work">What I do</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -208,6 +209,57 @@ done in 4.2 s</code></pre>
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
           Part of this was built for a company, so it stays general here.
         </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <p class="kicker">Projects</p>
+        <h2>Smaller things I built and run</h2>
+        <div class="proj-grid">
+          <article class="proj">
+            <div class="pflow" aria-hidden="true">
+              <span class="pf-node">Telegram · Slack</span><span class="pf-line"><i></i></span>
+              <span class="pf-node pf-main">Assistant</span><span class="pf-line"><i></i></span>
+              <span class="pf-outs"><span class="pf-node">Briefing</span><span class="pf-node">Voice</span><span class="pf-node">Files</span></span>
+            </div>
+            <h3>AI assistant</h3>
+            <p>My own AI assistant on the server, on Telegram and in the team's Slack. It runs without admin rights.</p>
+            <ul class="tags"><li>Hermes Agent</li><li>Telegram</li><li>Slack</li><li>systemd</li></ul>
+          </article>
+          <article class="proj">
+            <div class="pflow" aria-hidden="true">
+              <span class="pf-node">10 feeds</span><span class="pf-line"><i></i></span>
+              <span class="pf-node pf-main">Filter</span><span class="pf-line"><i></i></span>
+              <span class="pf-outs"><span class="pf-node">Telegram</span></span>
+            </div>
+            <h3>News bot</h3>
+            <p>Reads Croatian and German news feeds every hour and sends the few that matter to the newsroom.</p>
+            <ul class="tags"><li>n8n</li><li>RSS</li><li>Telegram API</li></ul>
+          </article>
+          <article class="proj">
+            <div class="pflow" aria-hidden="true">
+              <span class="pf-node">Scans</span><span class="pf-line"><i></i></span>
+              <span class="pf-node pf-main">OCR</span><span class="pf-line"><i></i></span>
+              <span class="pf-outs"><span class="pf-node">Invoice</span><span class="pf-node">Delivery note</span><span class="pf-node">Archive</span></span>
+            </div>
+            <h3>Invoice sorter</h3>
+            <p>Reads scanned invoices, names them and files them. Runs locally, nothing leaves the house.</p>
+            <ul class="tags"><li>n8n</li><li>Stirling PDF</li><li>OCR</li><li>Docker</li></ul>
+          </article>
+          <article class="proj">
+            <div class="pflow" aria-hidden="true">
+              <span class="pf-node">kapetanovic.net</span><span class="pf-line"><i></i></span>
+              <span class="pf-node pf-main">DNS</span><span class="pf-line"><i></i></span>
+              <span class="pf-outs"><span class="pf-node">Mail</span><span class="pf-node">Web</span></span>
+            </div>
+            <h3>Domain & mail</h3>
+            <p>My own domain with mail: SPF, DKIM and DMARC set by hand, HTTPS and 2FA everywhere.</p>
+            <ul class="tags"><li>DNS</li><li>SPF · DKIM · DMARC</li><li>Proton Mail</li></ul>
+          </article>
+        </div>
+        <p class="toolset"><strong>Every day</strong> Linux &amp; Docker · n8n · WordPress · PowerShell &amp; Windows · DNS &amp; mail · AI agents</p>
       </div>
     </section>
 
