@@ -201,12 +201,9 @@ done in 4.2 s</code></pre>
               <p class="work-num">04</p>
               <h3>Homelab</h3>
               <p>
-                An old HP laptop now runs Ubuntu Server around the clock and hosts n8n, Uptime Kuma
-                for monitoring and Dockge for the Docker stacks. Before wiping it I backed up
-                everything, checked each archive with SHA-256 and restored the n8n data on the new
-                system. The Wi-Fi card (Realtek RTL8821CE) kept dropping out and freezing the machine,
-                so I turned off its power saving and added a hardware watchdog that reboots the
-                server by itself if it ever hangs.
+                An old HP laptop now runs Ubuntu Server 24/7 with n8n, Uptime Kuma and Dockge in Docker.
+                When its Wi-Fi card kept freezing the machine, I fixed the driver and added a watchdog
+                that reboots it on its own.
               </p>
               <ul class="tags"><li>Ubuntu Server</li><li>Docker</li><li>n8n</li><li>SSH</li><li>systemd</li><li>Uptime Kuma</li></ul>
             </div>
