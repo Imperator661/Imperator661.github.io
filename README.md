@@ -10,8 +10,7 @@ de/index.html       German page (same layout, ../ paths; texts for the terminal,
                     menu labels live in the HTML, main.js reads them)
 css/style.css       all styles, light/dark tokens at the top
 js/main.js          theme toggle, mobile menu, terminal animation, copy email
-assets/             favicon and images (dd-header.webp = header strip of dnevnikdijaspore.de only;
-                    no press photos from the site, they are not ours to republish)
+assets/             favicon and images
 .nojekyll           tells GitHub Pages to serve files as they are (no Jekyll)
 ```
 

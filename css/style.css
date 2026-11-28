@@ -281,6 +281,9 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 .browser-bar .dot { width: 9px; height: 9px; background: #cdd3db; }
 .browser-url { flex: 1; min-width: 0; margin-left: 8px; padding: 3px 10px; border-radius: 6px; background: #fff; font: 0.72rem/1.4 var(--mono); color: #566070; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .browser img { width: 100%; }
+.browser-head { display: flex; align-items: center; gap: 12px; padding: 14px 12px 12px; border-bottom: 1px solid #e3e7ec; }
+.browser-head b { width: 30%; height: 14px; border-radius: 3px; background: #2b3440; }
+.browser-head span { flex: 1; height: 6px; border-radius: 3px; background: repeating-linear-gradient(90deg, #d3d9e1 0 13%, transparent 13% 19%); }
 .browser-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 10px; }
 .browser-grid i { position: relative; aspect-ratio: 4 / 3.6; border-radius: 3px; background: linear-gradient(180deg, #e7eaef 0 58%, #d3d9e1 58% 100%); }
 .browser-grid i::before { content: ""; position: absolute; left: 8%; top: 62%; width: 22%; height: 7%; background: #e60000; border-radius: 2px; }
